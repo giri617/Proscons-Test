@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 #画像の読み込み
-im = cv2.imread(r"C:\Users\giri\Pictures\milkdrop.png")
+im = cv2.imread("milkdrop.png")
 img = im.copy()
 
 
@@ -37,3 +37,5 @@ cv2.imshow("im",im)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+cv2.imwrite('answer.jpg', im)
